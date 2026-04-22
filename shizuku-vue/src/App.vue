@@ -1,85 +1,74 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// 我們暫時不需要 HelloWorld，所以不用 import 它
+import Footer from './components/Footer.vue'
+// import Sidebar from './components/Sidebar.vue' // 引入組件
+import Nav from './components/Nav.vue'
+import HomeBanner from './components/HomeBanner.vue';
+import ProductCard from './components/ProductCard.vue'
+// 準備 4 個假商品資料來填滿橫排
+const products = [
+  { id: 1, name: '日系質感長裙', price: 'NT$ 1,280', date: '4/22 NEW', image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=800' },
+  { id: 2, name: '透膚針織上衣', price: 'NT$ 890', date: '4/22 NEW', image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=800' },
+  { id: 3, name: '工裝百褶裙', price: 'NT$ 1,500', date: '4/22 NEW', image: 'https://images.unsplash.com/photo-1572804013307-a9a111dd83b8?q=80&w=800' },
+  { id: 4, name: '復古皮革小包', price: 'NT$ 2,100', date: '4/22 NEW', image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800' },
+  { id: 5, name: 'Minimalist Cotton Shirt', price: 'NT$ 1,200', date: '4/22 NEW', image: 'https://images.unsplash.com/photo-1598033129183-c4f50c717658?q=80&w=800' },
+  // 新增第 6 個：這張是寬褲類，湊滿兩排共 6 個
+  { id: 6, name: 'Pleated Wide Trousers', price: 'NT$ 1,980', date: '4/22 NEW', image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=800' }
+  
+]
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div class="min-h-screen flex flex-col font-sans">
+    
+    <Nav />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <main class="flex-1 py-10">
+      
+      <div class="max-w-5xl mx-auto px-6">
+        
+        <HomeBanner />
+        
+        <section class="mt-20">
+          
+          <div class="text-center mb-16">
+            <h2 class="text-3xl tracking-[0.4em] font-light uppercase text-gray-800">New Arrival</h2>
+            <p class="text-gray-400 text-xs mt-3 italic">Exploring the new aesthetics</p>
+          </div>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
+           <ProductCard 
+ v-for="n in 6" 
+  :key="n" 
+  :product="products[0]" />
+/>
+          </div>
+          
+          <div class="text-center mt-20">
+            <button class="border border-gray-300 px-10 py-3 text-sm tracking-widest hover:bg-black hover:text-white transition-all duration-500">
+              VIEW ALL
+            </button>
+          </div>
+        </section>
+        
+      </div>
+    </main>
 
-  <RouterView />
+    <Footer class="mt-20" />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+<style>
+/* 關鍵：刪除原本所有的樣式！
+  因為我們用了 Tailwind，所有的樣式都寫在 class 裡了。
+  這裡保持空白即可，或者放一些全域的字體設定。
+*/
+body {
+  margin: 0;
+  padding: 0;
 }
 </style>
