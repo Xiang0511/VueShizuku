@@ -97,12 +97,20 @@ const toggleProfileMenu = (event) => {
             class="mr-2 drawer-toggle-btn"
           />
 
-          <div class="w-10 h-10 bg-black rounded-xl flex items-center justify-center shadow-md">
-            <i class="pi pi-palette text-white text-xl"></i>
+          <div class="w-10 h-10 flex items-center justify-center overflow-hidden">
+            <img
+              src="../src/assets/img/LOGO.png"
+              alt="shizuku logo"
+              class="w-full h-full object-contain"
+            />
           </div>
-          <span class="text-xl font-bold tracking-tighter text-gray-900"
-            >MODA<span class="text-primary">CORE</span></span
-          >
+
+          <div class="flex flex-col leading-none">
+            <span class="text-xl font-bold tracking-tighter text-gray-900 uppercase">
+              shizuku
+            </span>
+            <span class="text-[10px] text-gray-400 font-light tracking-[0.2em] mt-1"> しずく </span>
+          </div>
         </div>
       </template>
 
@@ -307,17 +315,16 @@ const toggleProfileMenu = (event) => {
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         <div class="flex flex-col gap-4">
-          <div class="flex items-center gap-2">
-            <div class="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-              <i class="pi pi-palette text-white text-sm"></i>
-            </div>
-            <span class="text-lg font-bold tracking-tighter text-gray-900"
-              >MODA<span class="text-primary">CORE</span></span
-            >
+          <div class="flex items-center gap-3">
+            <img src="../src/assets/img/LOGO.png" alt="shizuku" class="w-8 h-8 object-contain" />
+            <span class="text-lg font-bold tracking-tighter text-gray-900 uppercase">
+              shizuku
+            </span>
+            <span class="text-[8px] text-gray-400">しずく</span>
           </div>
           <p class="text-gray-500 text-sm leading-relaxed">
-            探索 2026
-            最新流行趨勢，我們致力於提供高品質且具備設計感的時尚服飾，讓每個人都能穿出專屬自己的態度。
+            滴落於日常的時尚靈感。shizuku
+            致力於提供如水般純粹、高品質的設計服飾，探索簡約美學的無限可能。
           </p>
           <div class="flex gap-3">
             <Button icon="pi pi-facebook" severity="secondary" rounded variant="text" />
