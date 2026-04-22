@@ -32,6 +32,7 @@
             />
           </div>
         </div>
+        
 
         <!-- Product Grid -->
         <div class="product-grid">
@@ -174,6 +175,96 @@ const products = ref([
     colors: ['#1a2744', '#b0b0b0'],
     badge: null,
   },
+  {
+    id: 10,
+    name: 'ARC ARC Fabric Convertible Trousers',
+    price: 22640,
+    orig: null,
+    img: 'https://placehold.co/220x260/e8e8e8/888?text=Trousers',
+    colors: ['#b0b0b0', '#ffffff'],
+    badge: null,
+  },
+  {
+    id: 11,
+    name: 'ARC ARC Fabric Convertible Trousers',
+    price: 22640,
+    orig: null,
+    img: 'https://placehold.co/220x260/e8e8e8/888?text=Trousers',
+    colors: ['#b0b0b0', '#ffffff'],
+    badge: null,
+  },
+  {
+    id: 12,
+    name: 'YANG Weekend Yacht Short',
+    price: 23383,
+    orig: null,
+    img: 'https://placehold.co/220x260/ee4d2d/fff?text=Short',
+    colors: ['#ee4d2d', '#c0392b'],
+    badge: null,
+  },
+  {
+    id: 13,
+    name: 'YANG Distressed Gym Jersey Short',
+    price: 54886,
+    orig: null,
+    img: 'https://placehold.co/220x260/1a2744/fff?text=Jersey',
+    colors: ['#1a2744', '#b0b0b0'],
+    badge: null,
+  },
+  {
+    id: 14,
+    name: 'ARC ARC Fabric Convertible Trousers',
+    price: 22640,
+    orig: null,
+    img: 'https://placehold.co/220x260/e8e8e8/888?text=Trousers',
+    colors: ['#b0b0b0', '#ffffff'],
+    badge: null,
+  },
+  {
+    id: 15,
+    name: 'YANG Weekend Yacht Short',
+    price: 23383,
+    orig: null,
+    img: 'https://placehold.co/220x260/ee4d2d/fff?text=Short',
+    colors: ['#ee4d2d', '#c0392b'],
+    badge: null,
+  },
+  {
+    id: 16,
+    name: 'YANG Distressed Gym Jersey Short',
+    price: 54886,
+    orig: null,
+    img: 'https://placehold.co/220x260/1a2744/fff?text=Jersey',
+    colors: ['#1a2744', '#b0b0b0'],
+    badge: null,
+  },
+  {
+    id: 17,
+    name: 'ARC ARC Fabric Convertible Side Trousers',
+    price: 22640,
+    orig: null,
+    img: 'https://placehold.co/220x260/e8e8e8/888?text=Side+Trousers',
+    colors: ['#b0b0b0', '#ffffff'],
+    badge: null,
+  },
+  {
+    id: 18,
+    name: 'YANG Weekend Yacht Short',
+    price: 23383,
+    orig: null,
+    img: 'https://placehold.co/220x260/ee4d2d/fff?text=Short',
+    colors: ['#ee4d2d', '#c0392b'],
+    badge: null,
+  },
+  {
+    id: 19,
+    name: 'YANG Distressed Gym Jersey Short',
+    price: 54886,
+    orig: null,
+    img: 'https://placehold.co/220x260/1a2744/fff?text=Jersey',
+    colors: ['#1a2744', '#b0b0b0'],
+    badge: null,
+  },
 ])
 </script>
 
@@ -273,8 +364,8 @@ const products = ref([
 /* ---- Product Grid ---- */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 30px;
 }
 
 .product-card {
