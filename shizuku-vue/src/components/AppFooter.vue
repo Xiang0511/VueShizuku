@@ -1,4 +1,7 @@
 <script setup>
+import InputText from 'primevue/inputtext';
+import InputGroup from 'primevue/inputgroup';
+import Divider from 'primevue/divider';
 import { ref } from 'vue'
 
 const newsletterEmail = ref('')
