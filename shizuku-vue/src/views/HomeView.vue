@@ -1,11 +1,13 @@
 <script setup>
 import TheWelcome from '../components/TheWelcome.vue'
-import Nav from '../components/AppNav.vue'
+import AppNav from '../components/AppNav.vue'
+import AppFooter from '@/components/AppFooter.vue';
 </script>
 
 <template>
-  <Nav/>
+  <nav><AppNav/></nav>
   <main>
     <TheWelcome />
   </main>
+<footer><AppFooter/></footer>
 </template>
