@@ -6,7 +6,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      layout: Basic,
+      component: Basic,
       children: [
         {
           path: '', // 當路徑為 '/' 時，載入首頁
