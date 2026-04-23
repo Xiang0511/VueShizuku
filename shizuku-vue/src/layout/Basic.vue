@@ -9,5 +9,5 @@ import HomeView from '@/views/HomeView.vue';
   <main>
     <HomeView />
   </main>
-<footer><AppFooter/></footer>
+  <footer><AppFooter/></footer>
 </template>
