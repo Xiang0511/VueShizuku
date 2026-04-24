@@ -2,6 +2,7 @@
 import { RouterView } from 'vue-router'
 import AppNavbar from '../components/AppNavbar.vue'
 import AppFooter from '../components/AppFooter.vue'
+import HomeView from '@/views/HomeView.vue'
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import AppFooter from '../components/AppFooter.vue'
     <AppNavbar />
 
     <main class="flex-grow">
-      <RouterView />
+      <HomeView />
     </main>
 
     <AppFooter />

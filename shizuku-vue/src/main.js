@@ -12,6 +12,7 @@ import InputText from 'primevue/inputtext'
 import InputGroup from 'primevue/inputgroup'
 import Divider from 'primevue/divider'
 import Aura from '@primevue/themes/aura'
+import Menu from 'primevue/menu'
 const app = createApp(App)
 
 app.use(PrimeVue, {
@@ -29,5 +30,6 @@ app.component('Button', Button)
 app.component('InputText', InputText)
 app.component('InputGroup', InputGroup)
 app.component('Divider', Divider)
+app.component('Menu', Menu)
 
 app.mount('#app')
