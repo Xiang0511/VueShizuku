@@ -1,9 +1,12 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+// 這裡放首頁專屬的元件和資料
+// import HomeBanner from '@/components/HomeBanner.vue';
+// import ProductCard from '@/components/ProductCard.vue';
+
+
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <!-- <HomeBanner /> -->
+  <!-- <ProductCard /> -->
 </template>

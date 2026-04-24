@@ -6,18 +6,24 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView,
+      //載入版型檔案Basic.vue 當作外殼
+      component: () => import('../layout/Basic.vue'),
+      //children 就是這個外殼裡面裝的小孩(裡面的頁面)
+      children: [
+        {
+          path: '',
+          name: 'home',
+          component: HomeView
+        }
+      ]
     },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
-    },
-  ],
+    // 等你之後準備好客服頁面，就可以這樣加：
+    // {
+    //   path: '/customer',
+    //   name: 'customer',
+    //   component: () => import('../views/CustomerView.vue')
+    // }
+  ]
 })
 
 export default router
