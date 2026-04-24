@@ -10,12 +10,6 @@ import HomeView from '@/views/HomeView.vue';
   </nav>
   <main>
     <HomeView />
-
-    <HomeView />
-
-    <HomeView />
-
-    <HomeView />
   </main>
   <footer>
     <AppFooter />
