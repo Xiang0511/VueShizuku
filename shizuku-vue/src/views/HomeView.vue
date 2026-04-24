@@ -1,16 +1,10 @@
 <script setup>
-import ProductCard from '@/components/ProductCard.vue';
+// import ProductCard from '@/components/ProductCard.vue';
 import AppHeroBanner from '@/components/AppHeroBanner.vue';
 </script>
 
 <template>
-  <main>
-    <div>
-<AppHeroBanner/>
-</div>
-<div>
-    <ProductCard />
-</div>
-    
-  </main>
+  <div class="min-h-[600px] relative z-10">
+    <AppHeroBanner />
+  </div>
 </template>

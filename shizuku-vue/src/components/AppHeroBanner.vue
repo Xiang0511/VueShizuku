@@ -3,7 +3,7 @@
 import { ref } from 'vue'
 // 匯入 PrimeVue 提供的輪播圖工具 (就像買了一台幻燈片放映機)
 import Carousel from 'primevue/carousel'
-import Button from 'primevue/button'
+import Button from 'primevue/button' // <-- 補上這一行，按鈕才會動！
 
 /* ======= 核心邏輯區塊開始：準備海報資料清單 ======= */
 // 建立一個叫做 banners 的魔法盒子，裡面裝著一個清單 (陣列 [])

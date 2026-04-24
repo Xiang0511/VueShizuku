@@ -1,6 +1,8 @@
 import './assets/main.css'
 import PrimeVue from 'primevue/config' // 匯入設定
 import Aura from '@primevue/themes/aura' // 匯入 Aura 主題
+import Carousel from 'primevue/carousel'
+import Button from 'primevue/button'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
@@ -16,6 +18,8 @@ app.use(PrimeVue, {
     }
 })
 
+app.component('Carousel', Carousel)
+app.component('Button', Button)
 app.use(createPinia())
 app.use(router)
 
