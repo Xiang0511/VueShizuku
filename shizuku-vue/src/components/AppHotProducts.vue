@@ -1,49 +1,44 @@
 <script setup>
 import { ref } from 'vue'
-// 建立一個叫做 products 的資料盒子，裡面裝著一個清單 (陣列 [])
+// 建立一個叫做 products 的資料盒子，裡面裝著一個清單 (陣列 [物件{id:1,name:'',,,}])
 const products = ref([
   {
     id: 1,
-    // 商品名稱
-    name: '極簡風純棉短T',
-    // 優惠價格
-    price: 790,
-    // 原本價格
-    originalPrice: 990,
-    // 商品圖片網址 (我幫你挑了服飾相關的圖片)
-    image:
-      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop',
-    // 標籤文字 (顯示在左上角的小圓角標籤)
-    tag: 'HOT',
+    name: '日系慵懶風麻花針織衫',
+    price: 1180,
+    originalPrice: 1580,
+    // 溫柔米色針織
+    image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=800',
+    tag: '人氣',
   },
   {
-    // 第二件商品...
     id: 2,
-    name: '日系落肩長袖襯衫',
-    price: 1280,
-    originalPrice: 1580,
+    name: '韓系溫柔粉色雪紡洋裝',
+    price: 1580,
+    originalPrice: 1980,
+    // 粉嫩洋裝
     image:
-      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=800&auto=format&fit=crop',
+      'https://d31xv78q8gnfco.cloudfront.net/media/image_clips/67d81493454d40000c609d45/original.jpg?loop_breaker=1',
     tag: 'NEW',
   },
   {
-    // 第三件商品...
     id: 3,
-    name: '經典直筒牛仔褲',
-    price: 1450,
-    originalPrice: 1800,
+    name: '極簡質感百褶長裙',
+    price: 890,
+    originalPrice: 1200,
+    // 氣質長裙
     image:
-      'https://images.unsplash.com/photo-1604176354204-9268737828e4?q=80&w=800&auto=format&fit=crop',
-    tag: '', // 這件沒有標籤，留空
+      'https://app-photo.mo-bo.com.tw/APP_IMG/08020509/10F0B5C1-D16E-45A6-B41F-904F492EA363.jpg',
+    tag: '',
   },
   {
-    // 第四件商品...
     id: 4,
-    name: '輕量防風連帽外套',
-    price: 2100,
-    originalPrice: 2800,
+    name: '俐落系焦糖色西裝外套',
+    price: 1980,
+    originalPrice: 2480,
+    // 韓系西裝外套
     image:
-      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=800&auto=format&fit=crop',
+      'https://www.ratherstores.com/upload_files/fonlego-rwd/prodpic/D_R22W801800_32_%20(1).jpg',
     tag: 'SALE',
   },
 ])
