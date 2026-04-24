@@ -1,9 +1,16 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import ProductCard from '@/components/ProductCard.vue';
+import AppHeroBanner from '@/components/AppHeroBanner.vue';
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <div>
+<AppHeroBanner/>
+</div>
+<div>
+    <ProductCard />
+</div>
+    
   </main>
 </template>
